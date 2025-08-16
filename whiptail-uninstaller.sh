@@ -6,3 +6,5 @@ mapfile -t pkg_list < <(pacman -Qi | awk -F ': ' '
 /^Description/ {print name "|" $2}
 ')
 
+
+whiptail --scrolltext --checklist "test text" 40 130 0 
